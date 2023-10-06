@@ -1,0 +1,380 @@
+@import url("https://fonts.cdnfonts.com/css/emotional-rescue-personal-use");
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+@import url("https://fonts.cdnfonts.com/css/poppins");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+:root {
+  /* Fonts */
+  --emotional-font: "Emotional Rescue Personal Use", sans-serif;
+  --grotesk-font: "Cabinet Grotesk", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --montserrat-font: "montserrat", sans-serif;
+  /* Colors */
+  --pri-col: #009ee2;
+  --sec-col: #000000;
+  --white: #ffffff;
+  --lighter-col: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--sec-col);
+  background-color: #1e1e1e;
+  font-family: var(--grotesk-font);
+
+  scroll-behavior: smooth;
+  transition: linear 0.25s;
+}
+
+.overflow-y {
+  overflow-y: scroll;
+  scrollbar-width: 0;
+}
+
+.overflow-y::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  overflow-x: hidden;
+  border-radius: 24px;
+
+  width: 100%;
+  height: 100%;
+  max-height: 768px;
+}
+
+.wrapper .hero {
+  color: var(--white);
+  text-align: center;
+  background: url(/src/assets/travelHero.png) no-repeat center;
+
+  padding-top: 76px;
+  padding-inline: 20px;
+  width: 50%;
+}
+
+.wrapper .hero h1 {
+  font-size: 44px;
+  font-weight: 400;
+  font-family: var(--emotional-font);
+}
+
+.wrapper .hero h6 {
+  font-size: 44px;
+  font-weight: 700;
+  font-size: 18px;
+
+  max-width: 450px;
+  margin: 14px auto 0px auto;
+}
+
+.wrapper .form-wrapper {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  background: var(--white);
+  position: relative;
+  overflow-x: hidden;
+
+  width: 50%;
+}
+
+.wrapper .form-wrapper::after {
+  content: url(/src/assets/plane.svg);
+  position: absolute;
+  top: 51px;
+  right: 0;
+}
+
+.wrapper .form-wrapper .left-mosque {
+  position: absolute;
+  bottom: 0;
+  left: -18px;
+  width: 14vw;
+  max-width: 193px;
+}
+
+.wrapper .form-wrapper .right-mosque {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 11vw;
+  max-width: 180px;
+}
+
+.wrapper .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+.wrapper .form-wrapper form h1 {
+  font-size: 74px;
+  font-weight: 800;
+  color: var(--pri-col);
+  text-align: center;
+  line-height: 48px;
+}
+
+.wrapper .form-wrapper form p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--lighter-col);
+
+  margin-top: 16px;
+}
+
+.wrapper .form-wrapper form .input-cont {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.wrapper .form-wrapper form .input-cont .input-field {
+  position: relative;
+  margin: auto;
+  width: fit-content;
+}
+
+.wrapper .form-wrapper form .input-cont .password {
+  margin-top: 33px;
+}
+
+.wrapper .form-wrapper form .input-cont .input-field label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--pri-col);
+  background: var(--white);
+
+  /* background: red; */
+  padding-inline: 4px;
+}
+
+.wrapper .form-wrapper form .input-cont .input-field img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+}
+
+.wrapper .form-wrapper form .input-cont .input-field input {
+  outline: none;
+  border: 1px solid var(--pri-col);
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 18px 20px 18px 54px;
+  width: 364px;
+}
+
+.wrapper .form-wrapper form .input-cont:active + label{
+  color: red;
+}
+
+.wrapper .form-wrapper form h6 {
+  text-align: right;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--lighter-col);
+
+  margin-top: 24px;
+}
+
+.wrapper .form-wrapper form button.login {
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: var(--pri-col);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 16px 32px 0px rgba(0, 158, 226, 0.1);
+  border-radius: 5px;
+  user-select: none;
+
+  margin-inline: auto;
+  margin-top: 24px;
+  padding-inline: 42px;
+  padding-block: 15px;
+}
+
+.wrapper .form-wrapper form span.or {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: var(--montserrat-font);
+  color: var(--sec-col);
+
+  margin-top: 26px;
+  margin-inline: auto;
+  width: 65%;
+}
+
+.wrapper .form-wrapper form span.or::before,
+.wrapper .form-wrapper form span.or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+
+  width: 43%;
+  height: 1px;
+}
+
+.wrapper .form-wrapper form span.or::after {
+  left: 0;
+}
+
+.wrapper .form-wrapper .social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.wrapper .form-wrapper .social-login button {
+  border: unset;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wrapper .form-wrapper form h5 {
+  text-align: center;
+  color: var(--sec-col);
+  font-weight: 500;
+  font-size: 14px;
+
+  margin-top: 26px;
+  width: 100%;
+}
+
+.wrapper .form-wrapper form h5 b {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (width <= 1280px) {
+  main .wrapper {
+    border-radius: 0;
+  }
+}
+
+@media (width <= 1200px) {
+  .wrapper .form-wrapper::after {
+    position: absolute;
+    top: 41px;
+    right: -30px;
+    width: 30%;
+  }
+}
+
+@media (width <= 1200px) {
+  .wrapper .form-wrapper::after {
+    position: absolute;
+    top: 41px;
+    right: -30px;
+    width: 30%;
+  }
+}
+
+@media (width <= 1000px) {
+  .wrapper .hero h1 {
+    font-size: 34px;
+  }
+
+  .wrapper .hero h6 {
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .wrapper .form-wrapper form h1 {
+    font-size: 54px;
+    line-height: 38px;
+  }
+
+  .wrapper .form-wrapper form p {
+    margin-top: 12px;
+  }
+}
+
+@media (width <= 800px) {
+  .wrapper {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: fit-content;
+  }
+
+  .wrapper .hero h1 {
+    font-size: 34px;
+  }
+
+  .wrapper .hero h6 {
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .wrapper .hero {
+    display: none;
+  }
+
+  .wrapper .form-wrapper {
+    width: 100%;
+  }
+
+  .wrapper .form-wrapper .left-mosque,
+  .wrapper .form-wrapper .right-mosque,
+  .wrapper .form-wrapper::after {
+    display: none;
+  }
+
+  .wrapper .form-wrapper .social-login {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+@media (width <= 400px) {
+  .wrapper .form-wrapper form .input-cont .input-field {
+    width: 90vw;
+  }
+  .wrapper .form-wrapper form .input-cont .input-field input {
+    width: 100%;
+  }
+}
