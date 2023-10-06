@@ -33,7 +33,6 @@ body {
 
 .overflow-y {
   overflow-y: scroll;
-  scrollbar-width: 0;
 }
 
 .overflow-y::-webkit-scrollbar {
@@ -323,27 +322,8 @@ main {
   }
 }
 
+
 @media (width <= 1000px) {
-  .wrapper .hero h1 {
-    font-size: 34px;
-  }
-
-  .wrapper .hero h6 {
-    font-size: 14px;
-    max-width: 350px;
-  }
-
-  .wrapper .form-wrapper form h1 {
-    font-size: 54px;
-    line-height: 38px;
-  }
-
-  .wrapper .form-wrapper form p {
-    margin-top: 12px;
-  }
-}
-
-@media (width <= 800px) {
   .wrapper {
     display: flex;
     overflow-x: hidden;
