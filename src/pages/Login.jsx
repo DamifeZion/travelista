@@ -29,13 +29,13 @@ const Login = () => {
               <div className="input-field">
                 <img src={sms} />
                 <label htmlFor="email">Email Id</label>
-                <input type="email" id="email" required/>
+                <input type="email" id="email" required />
               </div>
 
               <div className="input-field password">
                 <img src={lock} />
                 <label htmlFor="password">Password</label>
-                <input type="password" id="password" required/>
+                <input type="password" id="password" required />
               </div>
             </div>
 
@@ -47,20 +47,29 @@ const Login = () => {
 
             <div className="social-login">
               <button>
-                <img src={googleLogin} alt="" />
+                <a href="https://travelista-by-zion.netlify.app/">
+                  <img src={googleLogin} alt="" />
+                </a>
               </button>
 
               <button>
-                <img src={facebookLogin} alt="" />
+                <a href="https://travelista-by-zion.netlify.app/">
+                  <img src={facebookLogin} alt="" />
+                </a>
               </button>
 
               <button>
-                <img src={appleLogin} alt="" />
+                <a href="https://travelista-by-zion.netlify.app/">
+                  <img src={appleLogin} alt="" />
+                </a>
               </button>
             </div>
 
             <h5>
-              Don’t have account? <b>Register Now</b>
+              Don’t have account?{" "}
+              <b>
+                <a href="https://travelista-by-zion.netlify.app/">Register Now</a>
+              </b>
             </h5>
           </form>
 
