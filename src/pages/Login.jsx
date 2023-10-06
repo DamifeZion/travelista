@@ -20,8 +20,8 @@ const Login = () => {
           </h6>
         </div>
 
-        <div className="overflow-y form-wrapper">
-          <form className="overflow-y ">
+        <div className="form-wrapper">
+          <form>
             <h1>Welcome</h1>
             <p>Login with Email</p>
 
