@@ -328,7 +328,7 @@ main {
     display: block;
     overflow-x: hidden;
     overflow-y: scroll;
-    max-height: fit-content;
+    max-height: 100vh;
   }
 
   .wrapper .hero h1 {
