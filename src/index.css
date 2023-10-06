@@ -328,16 +328,7 @@ main {
     display: block;
     overflow-x: hidden;
     overflow-y: scroll;
-    max-height: 100vh;
-  }
-
-  .wrapper .hero h1 {
-    font-size: 34px;
-  }
-
-  .wrapper .hero h6 {
-    font-size: 14px;
-    max-width: 350px;
+    min-height: 100vh;
   }
 
   .wrapper .hero {
@@ -346,6 +337,7 @@ main {
 
   .wrapper .form-wrapper {
     width: 100%;
+    overflow: hidden;
   }
 
   .wrapper .form-wrapper .left-mosque,
@@ -361,6 +353,10 @@ main {
 }
 
 @media (width <= 400px) {
+  .wrapper{
+    /* max-height: fit-content; */
+  }
+
   .wrapper .form-wrapper form .input-cont .input-field {
     width: 90vw;
   }
